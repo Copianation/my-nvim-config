@@ -19,7 +19,10 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
---            require("lspconfig").setup()
+            local lsp = require("lspconfig")
+            lsp.lua_ls.setup{}
+            lsp.clangd.setup{}
+            lsp.pyre.setup{}
         end
     },
 
