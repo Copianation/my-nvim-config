@@ -13,16 +13,19 @@ keymap.set("n", "<leader>sh", "<C-w>s")
 -- Plugins
 
 -- File brower
-vim.keymap.set("n", "<leader>f", ":Telescope file_browser<CR>")
+keymap.set("n", "<leader>f", ":Telescope file_browser<CR>")
 
 -- File tree
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- Terminal
-vim.keymap.set("n", "<leader>t", ":ToggleTerm<CR>")
-vim.keymap.set("t", "<leader><Esc>", "<C-\\><C-n>")
+keymap.set("n", "<leader>t", ":ToggleTerm<CR>")
+keymap.set("t", "<leader><Esc>", "<C-\\><C-n>")
 
 -- Debug
-vim.keymap.set("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<CR>")
-vim.keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>")
-vim.keymap.set("n", "<F10>", ":lua require'dap'.step_over()<CR>")
+keymap.set("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<CR>")
+keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>")
+keymap.set("n", "<F10>", ":lua require'dap'.step_over()<CR>")
+
+-- LSP
+keymap.set("n", "<leader>h", "vim.lsp.buf.hover")
