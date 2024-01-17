@@ -26,6 +26,3 @@ keymap.set("t", "<leader><Esc>", "<C-\\><C-n>")
 keymap.set("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<CR>")
 keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>")
 keymap.set("n", "<F10>", ":lua require'dap'.step_over()<CR>")
-
--- LSP
-keymap.set("n", "<leader>h", "vim.lsp.buf.hover")
