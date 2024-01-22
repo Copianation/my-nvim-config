@@ -22,7 +22,14 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>t", ":ToggleTerm<CR>")
 keymap.set("t", "<leader><Esc>", "<C-\\><C-n>")
 
+-- Run code with Bash
+keymap.set("n", "<F4>", ":TermExec cmd=\"./run.sh\"<CR>")
+
 -- Debug
 keymap.set("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<CR>")
 keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>")
 keymap.set("n", "<F10>", ":lua require'dap'.step_over()<CR>")
+
+-- Buffer line
+keymap.set("n", "gb", ":BufferLinePick<CR>")
+keymap.set("n", "Gb", ":BufferLinePickClose<CR>")
